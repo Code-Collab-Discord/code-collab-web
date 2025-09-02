@@ -56,7 +56,7 @@ export default function LoginPage() {
             )}
             <Button onClick={() => {
               setIsLoading(true)
-              signIn('discord')
+              signIn('discord', { callbackUrl: "/dashboard" })
             }} size="lg" className="w-full bg-[#5865F2] hover:bg-[#4752C4] text-white">
               {isLoading ? <Loader2Icon className="mr-2 h-4 w-4 animate-spin" /> : (
                 <>
